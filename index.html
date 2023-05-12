@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <form class="gape form-inline">
+                <div class="divNome form-group mb-2">
+                    <label for="inputNome" class="sr-only">Nome</label>
+                    <input type="text" class="inputNome form-control" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputDate1" class="sr-only">Data</label>
+                    <input class="form-control" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputDate2" class="sr-only">Data2</label>
+                    <input class="form-control" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputDate3" class="sr-only">Data3</label>
+                    <input class="form-control" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputDate4" class="sr-only">Data4</label>
+                    <input class="form-control" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+                </div>
+            </form>
+        </div>
+        <br><br>
+		<div id="graficoLinha"></div>
+        
+        <main>
+            <div>
+                <h1>TS</h1>
+                <a href="localizacaoAtual.html">Tela 2</a> <br>
+                <a href="paginaTeste.html">Pagina de testes</a>
+                <div class="endereco form-group mb-2">
+                    <label for="inputEndereco" class="sr-only">Nome</label>
+                    <input id="inputEndereco" type="text" class="inputEndereco form-control" placeholder="Digite o endereço ou Nome da cidade." aria-label="Address" aria-describedby="basic-addon1">
+                    <button id="botaoEndereco" type="button" onclick="showPosition()" class="btn btn-success">Buscar</button>
+                </div>
+                <div id="location"></div>
+                <br>
+            </div>
+            <div id="map"></div>
+        </main>
+    </div>
+
+
+    
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

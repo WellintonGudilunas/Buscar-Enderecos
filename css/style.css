@@ -1,0 +1,44 @@
+*{
+    margin: 0px
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+}
+.gape{
+    display: flex;
+    gap: 10px;
+}
+.divNome{
+    width: 300px;
+}
+.inputNome{
+    width: 100%!important;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+
+}
+h1{
+    font-size: clamp(14px, 4.5vw, 3em);
+
+}
+span{
+    color: #CD8912;
+}
+.endereco{
+    display: flex;
+    max-width: 600px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#map{
+    background-color: #333;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+
+}
